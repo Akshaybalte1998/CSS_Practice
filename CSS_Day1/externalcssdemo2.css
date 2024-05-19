@@ -1,0 +1,19 @@
+ 
+        /* class selector */
+       .myclass{
+            background-color: yellow;
+            color:red;
+            border:2px solid red;
+            border-radius:6px;
+            /*margin-left: 50px;*/
+            /*margin:50px 200px 10px 30px;*/
+            margin:50px;
+            padding-left:50px;
+        }
+        h1{
+            background-color: blue;
+            color:white;
+            border:2px solid red;
+
+        }
+   
