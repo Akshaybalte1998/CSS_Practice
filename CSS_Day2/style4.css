@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    text-decoration:  red wavy underline;
+}
+h2{
+
+    text-align: right;
+    text-decoration:blue dotted underline;
+}
+h3{
+    text-decoration: overline;
+}
+h4{
+    
+    text-decoration: line-through;
+}
