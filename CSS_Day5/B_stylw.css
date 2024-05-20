@@ -1,0 +1,32 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+}
+#box1
+{
+    position: static;
+    top: 20px;
+    z-index: -10;
+}#box2
+{
+    position: relative;
+    top: 50px;
+    left: 20px;
+    
+}
+#box3
+{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: 10;
+}
+#box4
+{
+    position: fixed;
+    top: 10px;
+    width: 500px;
+}
