@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+        }
+        .container {
+            background-color: black;
+            color: white;
+            border: 2px solid blue;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+        }
+        fieldset {
+            border: none;
+            padding: 0;
+        }
+        legend {
+            background-color: blue;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="url"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Registration Details</legend>
+            <table>
+                <tr>
+                    <td><label for="university">University:</label></td>
+                    <td><input type="text" id="university" name="university"></td>
+                </tr>
+                <tr>
+                    <td><label for="institute">Institute:</label></td>
+                    <td><input type="text" id="institute" name="institute"></td>
+                </tr>
+                <tr>
+                    <td><label for="branch">Branch:</label></td>
+                    <td>
+                        <select id="branch" name="branch">
+                            <option value="" disabled selected>--select--</option>
+                            <option value="mechanical">Mechanical</option>
+                            <option value="electric">Electric</option>
+                            <option value="computer_science">Computer Science</option>
+                            <option value="information_technology">Information Technology</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="degree">Degree:</label></td>
+                    <td>
+                        <select id="degree" name="degree">
+                            <option value="" disabled selected>--select--</option>
+                            <option value="btech">B.Tech</option>
+                            <option value="mtech">M.Tech</option>
+                            <option value="be">B.E</option>
+                            <option value="me">M.E</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Status:</td>
+                    <td>
+                        <input type="radio" id="pursuing" name="status" value="pursuing">
+                        <label for="pursuing">Pursuing</label>
+                        <input type="radio" id="completed" name="status" value="completed">
+                        <label for="completed">Completed</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cpi">Average CPI:</label></td>
+                    <td><input type="number" id="cpi" name="cpi"></td>
+                </tr>
+                <tr>
+                    <td><label for="upto">Upto:</label></td>
+                    <td><input type="number" id="upto" name="upto">th Semester</td>
+                </tr>
+                <tr>
+                    <td><label for="experience">Experience:</label></td>
+                    <td><input type="number" id="experience" name="experience"> Years</td>
+                </tr>
+                <tr>
+                    <td><label for="website">Your Website Or Blog:</label></td>
+                    <td><input type="url" id="website" name="website" placeholder="http://"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+</body>
+</html>
